@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vnetName": {
+            "value": "csk-hub-p-eus2-net-vnet"
+        },
+        "dc-Subnet-name": {
+            "value": "csk-hub-p-eus2-net-dc-sn"
+        },
+        "mgmt-tools-subnet-name": {
+            "value": "csk-hub-p-eus2-net-mgtvm-sn"
+        },
+        "mgmt-subnet-name": {
+            "value": "csk-hub-p-eus2-net-mgt-sn"
+        },
+        "vnetAddressSpace": {
+            "value": "192.168.240.0/20"
+        },
+        "dc-subnet-address-space": {
+            "value": "192.168.240.192/28" 
+        },
+        "mgmt-tools-vm-subnet-address-space": {
+            "value": "192.168.240.192/208"
+        },
+        "mgmt-subnet-address-space": {
+            "value": "192.168.240.32/27"
+        }
+    }
+}
